@@ -9,7 +9,7 @@
 | app-livenessProbe.yaml  | Add liveness probe to /health path with 10 sec delay | Updated app.yaml | [Raw yaml](https://raw.githubusercontent.com/artur-titov/ai-yaml/main/yaml/app-livenessProbe.yaml) |
 | app-readinessProbe.yaml | Add readiness probe to /ready path with 5 sec period | Updated app.yaml | [Raw yaml](https://raw.githubusercontent.com/artur-titov/ai-yaml/main/yaml/app-readinessProbe.yaml) |
 | app-volumeMounts.yaml   | Add data volume from host machine (/var/lib/app) and mount into container to /data path | Updated app.yaml | [Raw yaml](https://raw.githubusercontent.com/artur-titov/ai-yaml/main/yaml/app-volumeMounts.yaml) |
-| app-cronjob.yaml        | |||
+| app-cronjob.yaml        | Create a cronjob yaml that will run the "echo "hello world"" command in the demo-app container every 5 minutes constantly | Cronjob yaml | [Raw yaml](https://raw.githubusercontent.com/artur-titov/ai-yaml/main/yaml/app-cronjob.yaml) |
 | app-job.yaml            | |||
 | app-multicontainer.yaml | |||
 | app-resources.yaml      | |||
