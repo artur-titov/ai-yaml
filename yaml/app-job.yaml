@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-app-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: google-cloud-sdk
+        image: google/cloud-sdk:275.0.0-alpine
+        command: ["/bin/sh", "-c", "gsutil -m rsync -dr gs://glow-sportradar/ /data/input"]
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data/input
+      restartPolicy: Never
+      volumes:
+      - name: data-volume
+        emptyDir:
+          medium: ""
